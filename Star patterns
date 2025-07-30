@@ -1,0 +1,280 @@
+// Anshika Tewari
+// 24070123017
+// Batch: A1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of rows you want to print: ";
+    cin >> n;
+
+    // 1. Right-angled Triangle
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    /*
+    Example output (n = 5):
+    *
+    **
+    ***
+    ****
+    *****
+    */
+
+    cout << "\n";
+
+    // 2. Inverted Right-angled Triangle
+    for (int i = n; i >= 1; i--) {
+        for (int j = i; j >= 1; j--) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    /*
+    *****
+    ****
+    ***
+    **
+    *
+    */
+
+    cout << "\n";
+
+    // 3. Mirrored Right-angled Triangle
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    /*
+        *
+       **
+      ***
+     ****
+    *****
+    */
+
+    cout << "\n";
+
+    // 4. Equilateral Triangle
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+        cout << "\n";
+    }
+    /*
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *
+    */
+
+    cout << "\n";
+
+  
+
+    
+
+    // 5. Equilateral Triangle (Continuous)
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 0; j < 2 * i + 1; j++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    /*
+        *
+       ***
+      *****
+     *******
+    *********
+    */
+
+    cout << "\n";
+
+    // 6. Diamond Pattern
+    for (int i = 1; i < n; i++) {
+        for (int j = 1; j < n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << " *";
+        }
+        cout << "\n";
+    }
+    for (int i = n; i >= 1; i--) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+        cout << "\n";
+    }
+    /*
+       *
+      * *
+     * * *
+    * * * *
+     * * *
+      * *
+       *
+    */
+
+    cout << "\n";
+
+    // 7. Hour-Glass Pattern
+    for (int i = n; i > 1; i--) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << " *";
+        }
+        cout << "\n";
+    }
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << " *";
+        }
+        cout << "\n";
+    }
+    /*
+    * * * * *
+     * * * *
+      * * *
+       * *
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *
+    */
+
+    cout << "\n";
+
+    // 8. Number Triangle
+    int m = 1;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << m << "\t";
+            m++;
+        }
+        cout << "\n";
+    }
+    /*
+    1
+    2 3
+    4 5 6
+    7 8 9 10
+    11 12 13 14 15
+    */
+
+    cout << "\n";
+
+    // 9. Number Pyramid
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << i << "\t";
+        }
+        cout << "\n";
+    }
+    /*
+    1
+    2 2
+    3 3 3
+    4 4 4 4
+    5 5 5 5 5
+    */
+
+    cout << "\n";
+
+    
+
+    // 10. Alphabet Pyramid (Continuous)
+    int num = 65;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%c", num);
+            num++;
+        }
+        cout << "\n";
+    }
+    /*
+    A
+    BC
+    DEF
+    GHIJ
+    KLMNO
+    */
+
+    cout << "\n";
+
+    // 11. Alphabet Pyramid
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%c", 64 + i);
+        }
+        cout << "\n";
+    }
+    /*
+    A
+    BB
+    CCC
+    DDDD
+    EEEEE
+    */
+
+    cout << "\n";
+
+    // 12. Half Diamond Pattern
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    for (int i = n - 1; i >= 1; i--) {
+        for (int j = i; j >= 1; j--) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    /*
+    *
+    **
+    ***
+    ****
+    *****
+    ****
+    ***
+    **
+    *
+    */
+
+    cout << "\n";
+
+  
+
+    return 0;
+}
