@@ -22,7 +22,8 @@ for(initialization; condition; increment/decrement) {
 // While loop
 while(condition) {
     // Code block
-}```
+}
+```
 
 ## Differences between `for` and `while` Loops
 
@@ -42,17 +43,17 @@ while(condition) {
 #### Nested Loops:
 Used for row and column control. Outer loop controls rows, inner loop controls columns/spaces.
 
-ASCII Values for Characters:
+##### ASCII Values for Characters:
 Alphabets are printed using ASCII values:
 
 'A' = 65
 
 printf("%c", 65); prints A.
 
-Spacing:
+#### Spacing:
 Spaces (" ") are important to align patterns correctly (especially for mirrored or centered shapes).
 
-Pattern Formulae:
+#### Pattern Formulae:
 Stars in equilateral: 2i - 1 or 2i + 1
 
 Mirroring: Print (n - i) spaces before printing stars/numbers
